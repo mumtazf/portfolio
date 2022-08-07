@@ -1,14 +1,3 @@
-let regexp = /android|iphone|kindle|ipad/i;
-
-let details = navigator.userAgent;
-let isMobileDevice = regexp.test(details);
-
-var warning = getElementById("warning");
-
-  if(isMobileDevice){
-    warning.style.display = "block";
-  }
-
 function show(id){
     document.getElementById(id).style.visibility = "visible";
 }
@@ -24,19 +13,23 @@ function darkMode(){
     dark_button.innerHTML("Light Mode");
 }
 
-const checkbox = document.getElementById('dark_mode');
+// var checkbox = document.getElementById('dark_mode');
 
-checkbox.addEventListener('change', ()=>{
-  document.body.classList.toggle('dark');
-  checkbox.innerText = "Light Mode";
-})
+// checkbox.addEventListener('change', ()=>{
+//   document.body.classList.toggle('dark');
+//   checkbox.innerText = "Light Mode";
+// });
 
 function activate(){
     var element = getElementById(id);
     element.classList.toggle("active");
 }
 
-
+var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+if (isMobile) {
+var warning = document.getElementById("warning");
+warning.style.display = "block";
+}
 
 //     //this function is triggered when someone presses the boat 
 

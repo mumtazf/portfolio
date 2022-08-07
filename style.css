@@ -615,7 +615,7 @@ a:hover{
 #warning{
   background-color: rgba(14, 112, 14, 0.662);
   color: white;
-  display:hidden;
+  display:none;
   position:sticky;
   width: 100%;
   font-size: auto;
