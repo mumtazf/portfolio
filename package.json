@@ -1,0 +1,20 @@
+{
+  "name": "mumtaz-website",
+  "version": "1.0.0",
+  "description": "Creating a package.json file for my website",
+  "main": "main.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "portfolio",
+    "website",
+    "blog"
+  ],
+  "author": "Mumtaz",
+  "license": "ISC",
+  "dependencies": {
+    "typeit": "^8.6.6"
+  }
+}
