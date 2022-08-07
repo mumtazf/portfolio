@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+    <html lang = "en">
+        <head>
+            <meta charset = "utf-8">
+            <meta name = "viewport" content = "width=device-width, initial-scale=1">
+            <title> Mumtaz Fatima </title>
+            <link rel = "stylesheet" href = "style.css">
+            <script src="main.js"></script>
+        </head>
+
+        <body>
+            <script src="main.js"></script>
+            <link href="https://fonts.googleapis.com/css?family=Baloo+2:400,800&display=swap" rel="stylesheet">
+
+            <div class = "hero">
+                <div class = "sun">
+                    <img src = "images/sun.gif">
+                </div>
+                    <!-- rework on the script part -->
+                <div class = "chat"> <span class="auto-input"></span></div>
+                    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+                    <script>
+                        let typed = new Typed(".auto-input", {
+                        strings: ["Welcome to Mumtaz's World! :)", "Click on the boat to explore!"],
+                        typeSpeed: 100,
+                        backSpeed: 100,
+                        loop: false
+                        })
+                    </script>
+                
+            <div class = "ocean">
+                    <img src = "images/water.png" class = "water" alt = "image of waves">
+
+                <div class = "boat">
+                            
+                            <button id = "boat_button" onclick="openForm()"> <img src = "images/boat.png" alt = "image of a boat"> </button>
+
+                        <div class = "form-popup" id = "welcome_form">
+                            <form class = "welcome_form" method = "POST" action = "homepage.html">
+                                <ul>
+                                    <li>
+                                        <label for = "name">What's your name, traveler?</label>
+                                        <input type = "text" id = "name" required> 
+                                    </li>
+                        
+                                    <li>
+                                        <label for = "purpose">Why are you here?</label>
+                                        <input type = "text" list="purpose"/>
+                                        <datalist id = "purpose" required> 
+                                            <option value = "Professional">Learning about you professionally</option>
+                                            <option value = "Reviewing">Reviewing your website</option>
+                                            <option value = "Blog">Visiting from your blog</option>
+                                            <option value = " ">Other (Type above)</option>
+                                        </datalist>
+                                            
+                                    </li>
+                        
+                                    <li>
+                                       <!-- <a href = "homepage.html"> -->
+                                        <button id = "welcome_submit">Let's GO!</button>
+                                        <!-- </a>  -->
+                                    </li>
+                        
+                        
+                        
+                                </ul>
+                            </form>
+                        </div>
+                            <script>
+                                    function openForm(){
+                                        document.getElementById('welcome_form').style.display = "block"; 
+                                        document.getElementById('boat_button').style.display = "none";
+                                    }
+
+                                  //  document.getElementById('welcome_submit').onclick = function(){
+                                      //  var validate = document.forms["welcome_form"]["name"]["purpose"].values
+                                    //    var link = document.getElementById("welcome_submit").value;
+                                      //  console.log("hi");
+                                      //  if(validate == "") {
+                                      //      alert("All fields must be filled before submission");
+                                      //  }
+                                      //  else{
+                                       //    location.href = link.value;
+                                      //      }
+                                   // }
+                                </script>
+                    </div>
+                </div>
+            </div>
+        </body>
+    </html>

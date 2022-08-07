@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <title> Mumtaz Fatima </title>
+        <link rel = "stylesheet" href = "style.css">
+        <script src = "main.js"></script>
+        <!-- Importing fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato&family=Raleway:wght@500&family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin='anonymous'>
+
+        <nav class = "nav-bar">
+                <a href = "#home">Home</a>
+                <a href = "#projects-info">My Projects</a>
+                <a href = "#blog">Blog</a>
+                <a href = "#contact">Contact</a> 
+                <div class = "dark_button">
+                    <button class = "button1" id = "dark_mode" onclick="darkMode()">Dark mode</button>   
+                </div>
+        </nav>
+
+     </head>
+
+     <body> 
+         <!-- Who am I section -->
+         <section class = "about-me">
+
+            <h2 class = "about-me-heading">Who am I?</h2>
+            <div class = "my-pic">
+                  <img src = "images/mumtazfatima.jpg">
+            </div>
+            <div class = "about-me-text">
+            <p class = "auto-input"></p>
+            <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+                    <script>
+                        let typed = new Typed(".auto-input", {
+                        strings: ["Hey! I'm Mumtaz and welcome to my little world. \nHere you will find that I'm interested in the intersection of AI and human impact.  \nI spend my time learning how to develop more inclusive ML models. \nOutside of work, you can find my enjoying a long run around the lake or writing poetry. "],
+                        typeSpeed: 50,
+                        loop: false
+                        })
+                    </script>
+                </div>
+         </section>
+
+
+         <!-- What do I enjoy working on? -->
+         <section class = "projects-info" id = "projects-info">
+             <h2 class = "projects-heading">What projects do I work on?</h2>
+             
+             <!-- Project 1 -->
+             <!-- Project 2 -->
+             <div class = "project_container">
+                <!-- Project 1 -->
+                    <div class = "project_card">
+                        <div class = "project_icon"  id = "scheme1" onmouseover="show('slider')" onmouseout="hide('slider')">
+                            <img src = "https://res.cloudinary.com/mumtazf/image/upload/v1657933737/MIT_logo_dbpgq9.png" alt = "MIT Logo">
+                        </div>
+            
+                        <div id = "slider">
+                            <H2>Machine Learning Fellow @ MIT</H2>
+                            <p>This experience allows me to learn how to develop different ML models <br> and optimize model selection based on better label prediction. <br> My team and I recently conducted a deep dive into Named Entity Recognition models. <br>  
+                                </p>
+                        </div>
+                    </div>
+
+                     <!-- Project 2 -->
+                     <div class = "project_card">
+                        <div class = "project_icon"  id = "scheme2" onmouseover="show('slider2')" onmouseout="hide('slider2')">
+                            <img src = "https://res.cloudinary.com/mumtazf/image/upload/v1659072782/girls_who_code.png" alt = "Girls Who Code Logo">
+                        </div>
+            
+                        <div id = "slider2">
+                            <H2> Teaching Assistant @ Girls Who Code</H2>
+                            <p>I enjoy being able to provide high school students a fun introduction to CS. <br> It allows me to make other female-identifying students like they belong in tech by sharing my story and learning about their passions</p>
+                        </div>
+                    </div>
+            
+                    <!-- Project 3 -->
+                    <div class = "project_card">
+                        <div class = "project_icon"  id = "scheme1" onmouseover="show('slider3')" onmouseout="hide('slider3')">
+                            <img src = "https://res.cloudinary.com/mumtazf/image/upload/v1657933737/Google_logo_exrf9b.png" alt = "Google Logo">
+                        </div>
+            
+                        <div id = "slider3">
+                            <H2>Responsible Innovation Fellow @ Google </H2>
+                            <p>Through this experience, I gained first-hand insight into ethical innovation processes and ethics evaluation of products. <br>
+                            I collaborated on a project with my team on improvising AI and machine learning models for underrepresented minorities.</p>
+                        </div>
+                    </div>
+            
+                    <!-- Project 4 -->
+                    <div class = "project_card">
+                        <div class = "project_icon"  id = "scheme2" onmouseover="show('slider4')" onmouseout="hide('slider4')">
+                            <img src = "https://res.cloudinary.com/mumtazf/image/upload/v1657934940/research.png" alt = "magnifying lens">
+                        </div>
+            
+                        <div id = "slider4">
+                            <H2>Machine Learning Research Assistant @ UMass</H2>
+                            <p>I'm collaborating on a research project related to exploring confirmation bias <br> and social media user interaction using NLP.</p>
+                        </div>
+                    </div>
+            
+                    <!-- Project 5 -->
+                    <div class = "project_card">
+                        <div class = "project_icon"  id = "scheme1" onmouseover="show('slider5')" onmouseout="hide('slider5')">
+                            <img src = "https://res.cloudinary.com/mumtazf/image/upload/v1657935389/coding_vyjhyg.webp" alt = "laptop">
+                        </div>
+            
+                        <div id = "slider5">
+                            <H2>Programming random fun stuff!</H2>
+                            <p>I enjoy coding with peers! Previously, I worked with friends to create a Garden Themed edition of Wordle. <br>
+                            I've also worked with Arduino and enjoy programming hardware components. </p>
+                        </div>
+                    </div>
+            
+            </div>
+         </section>
+
+
+
+
+          <!-- How do I think about this world? -->
+        <section class = "blog" id = "blog">
+            <div class = "main-blog"> 
+                <h2 class = "blog-heading">How do I think about this world?</h2>
+                    <div class = "blog-showcase">
+                        <div class = "blog_container">
+                            <a href = "https://mumtazf.github.io/test1/blog.html"  style="text-decoration:none">
+                                <div class = "blog-card" onmouseover="displayEle1()" onmouseleave="hideEle1()">
+                                    <h3 class = "blog_title">BLOG</h3>
+                                    <div id = "blog_description" >Follow along the trail of thoughts. . .</div>
+                                </div>
+                            </a>
+                        </div>
+                    
+                        <div class = "blog_container">
+                            <a href = "https://mumtazf.github.io/test1/about.html"  style="text-decoration:none">
+                                <div class = "blog-card" onmouseover="displayEle2()" onmouseleave="hideEle2()">
+                                    <h3 class = "blog_title">POETRY</h3>
+                                    <div id = "poetry_description" >An exploration of abstraction and observation.</div>
+                                </div>
+                            </a>
+                        </div>
+                </div>
+        </div>
+
+            <script>
+                function displayEle1(){
+                    blog_description.style.display = 'block';
+                }
+                
+                function hideEle1(){
+                    blog_description.style.display = 'none';
+                }
+
+                function displayEle2(){
+                    poetry_description.style.display = 'block';
+                }
+                
+                function hideEle2(){
+                    poetry_description.style.display = 'none';
+                }
+                </script>
+
+    </section>
+
+         <!-- Contact me -->
+         <section class = "contact" id = "contact">
+            <h2 class = "contact-heading">Where can you contact me?</h2>    
+            <form>
+                <ul>
+                    <div class = "name_email">
+                       <li> 
+                           <!-- taking in the name -->
+                           <label for "name">Name</label>
+                           <input type = "text" id = "name" required>
+                       </li>
+                       <li>
+                           <label for "mail">E-mail</label>
+                           <input type = "email" id = "mail" name= "user_email" required>
+                       </li>
+                   </div>
+                    <li>
+                        <label for "subject">Subject</label>
+                        <input type = "text" id = "subject" name = "user_subject" required>
+                    </li>
+   
+                    <li>
+                       <label for "message">Message</label>
+                       <textarea type = "text" id = "message" name = "user_message" required> </textarea>
+                   </li>
+   
+                   <!-- button for submit -->
+                   <li class = "button">
+                       <button type = "submit" class = "send_button">Send!</button>
+                   </li>
+                </ul>
+            </form>        
+        </section>
+
+     </body>
+</html>
