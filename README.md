@@ -1,4 +1,4 @@
-Portfolio Website
+## Portfolio Website
 
 This is a simple HTML/CSS portfolio that aims at giving you a glimpse into my professional and personal interests. 
 
