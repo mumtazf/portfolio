@@ -56,44 +56,97 @@
   /* ----------------------------- Who am I section ----------------------------------- */
   .about-me{
     height: 100vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
+
+/* for child */
+  .child_container{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: 0%;
+}
+
+/* for image */
+.child_container2{ 
+  display: flex;
+  flex: 1 50%;
+  width: 50%;
+}
+
+.my-pic{
+  display: flex;
+  flex: 1 50%;
+  height: 40%;
+  margin-left: auto;
+
+}
+
+.my_image{
+  margin-right: 5%;
+  margin-left: auto;
+  box-shadow: 20px 20px #0095be3e;
+
+}
+
+@media only screen and (min-device-width : 320px) and (max-width: 600px) {
   
+  .about-me{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+
+  .child_container2{ 
+    display: flex;
+    flex: 1 50%;
+    width: 50%;
+  }
+
+  .my-pic{
+    display: flex;
+    flex: 1 50%;
+    height: 20%;
+    
+  }
+
+  .my_image{
+    margin-right: 5%;
+    box-shadow: 20px 20px #0095be3e;
+  
+  }
+
+
+}
   #about-me-heading{
-    padding-top: 50px;
-    padding-left: 30px;
-    font-size: 40px;
+    padding-top: 5%;
+    padding-left: 5%;
+    font-size: 2.5em;
     color: #0095BE;
     font-family: 'Raleway', sans-serif;
-    flex-basis: 100%;
     text-align: left;
+    flex: 1 30%;
+
   }
   
   .auto-input{
     padding: 5vh;
     font-family: 'Raleway', sans-serif;
-    font-size: 20px;
-    margin-left: 2vh;
-    line-height: 30px;
-    justify-content: center;
-    align-items: flex-end;
+    font-size: 1.3em ;
+    line-height: 1.35em;
   }
   
-  .my-pic{
-    box-shadow: 20px 20px #0095be3e;
-    margin-right: 60px;
-    justify-content: flex-end;
-  }
-  
-  .about-me-box{
-    padding-left: 5vh;
-  }
+
   
   .about-me-text{
     margin-right: 5vh;
-    width: 120vh;
-    flex-basis: 100%;
     justify-content: center;
-    align-items: flex-end;
+    flex: 1 30%;
+
   }
   
   

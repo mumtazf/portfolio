@@ -26,25 +26,26 @@
          <!-- Who am I section -->
         <section class = "about-me">
 
-            <div class = "flexbox-container">
+            <div class = "child_container">
                         <h2 id = "about-me-heading">Who am I?</h2>
                 
-                    <div class = "my-pic">
-                        <img src = "https://res.cloudinary.com/mumtazf/image/upload/v1659834955/mumtazfatima.jpg">
+                <div class = "about-me-text">
+                            <p class = "auto-input"></p>
+                            <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+                                    <script>
+                                        let typed = new Typed(".auto-input", {
+                                        strings: ["Hey! I'm Mumtaz and welcome to my little world. \nHere you will find that I'm interested in the intersection of AI and human impact.  \nI spend my time learning how to develop more inclusive ML models. \nOutside of work, you can find my enjoying a long run around the lake or writing poetry. "],
+                                        typeSpeed: 50,
+                                        loop: false
+                                        })
+                                    </script>
                     </div>
+            </div>   
 
-                    <div class = "about-me-text">
-                        <p class = "auto-input"></p>
-                        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-                                <script>
-                                    let typed = new Typed(".auto-input", {
-                                    strings: ["Hey! I'm Mumtaz and welcome to my little world. \nHere you will find that I'm interested in the intersection of AI and human impact.  \nI spend my time learning how to develop more inclusive ML models. \nOutside of work, you can find my enjoying a long run around the lake or writing poetry. "],
-                                    typeSpeed: 50,
-                                    loop: false
-                                    })
-                                </script>
-                        </div>
-               </div>
+            <div class = "child_container2">
+               <div class = "my-pic">
+                            <img class = "my_image" src = "https://res.cloudinary.com/mumtazf/image/upload/v1659834955/mumtazfatima.jpg">
+                </div>
         </section>
 
 
