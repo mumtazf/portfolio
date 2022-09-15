@@ -1,0 +1,623 @@
+*{
+  box-sizing: border-box ;
+  -moz-box-sizing: padding-box;
+}
+
+
+
+
+
+.hero{
+    width: 100%; 
+    height: 100vh;
+    position: relative;
+    background-color: lightblue;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+
+
+@keyframes fadeInAnimation {
+  0%{
+    opacity: 0;
+  }
+
+  100%{
+    opacity: 1;
+  }
+}
+
+.ocean{
+    height: 220px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left:0;
+}
+
+.water{
+    height:100%;
+    position: absolute;
+    right:0;
+    animation: water 15s linear infinite;
+}
+
+/*I'm creating the animation here*/
+@keyframes water{
+
+    0%{
+        transform: translateX(0);
+    }
+
+    100%{
+        transform: translateX(1000px);
+    }
+}
+
+.boat{
+    width: 350px;
+    position:absolute;
+    bottom: 200px;
+    left:50%;
+    transform: translateX(-50%);
+}
+
+.boat img{
+    width: 100%;
+    -webkit-box-reflect: below 0 
+    linear-gradient(rgba(255,255,255,0.1),rgba(255,255,255,0.6));
+    animation: boat 2s linear infinite;
+}
+
+@keyframes boat{
+
+    0%{
+        transform: rotate(0deg);
+    }
+
+    25%{
+        transform: rotate(-1deg);
+    }
+
+    50%{
+        transform: rotate(0deg);
+    }
+
+    75%{
+        transform: rotate(1deg);
+    }
+
+   100%{
+        transform: rotate(0deg);
+    }
+}
+
+/* Boat button styling and forms tyling */
+#welcome_form{
+  /* font-family: 'Raleway', sans-serif; */
+  /* font-size: 14px; */
+  font-weight: 1000;
+  display: none;
+  justify-content: center;
+  padding-bottom: 5vh;
+  padding-left: 5vh;
+  padding-right: 5vh;
+  padding-top: 5vh;
+  color: #ffffff;
+}
+
+#welcome_form.show{
+  display: block;
+  align-items: center;
+  color: white;
+}
+
+button#boat_button{
+  display: inline-block;
+  height: 30vh;
+  padding: 0;
+  margin: 0;
+  vertical-align: top;
+  width: 40vh;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  background-repeat: no-repeat;
+  border-width: 0;
+
+}
+
+button#boat_button img {
+  display: block;
+  height: 30vh;
+  width: 40vh;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.form-popup{
+  /* display: flex; */
+  background-color: rgb(63, 184, 184);
+  color: white;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2vh;
+  box-shadow: 2vh 2vh 1vh 1vh grey;
+  /* flex-wrap: nowrap; */
+}
+
+.sun{
+    height: 10px;
+    max-width: 30%;
+    size: 100px;
+    position: fixed;
+    right:0;
+}
+
+ .chat{
+     width: 40ch;
+     height: 10vh;
+     background: #F0F8FF;
+     border-radius: 11px;
+     padding:10px;
+     top: 50px;
+     right: 15%;
+     position: absolute;
+ }
+
+ .chat{
+  position: absolute;
+  right: auto;
+  width: 40ch;
+  height: 10vh;
+  background-color: #F0F8FF;
+  font: serif;
+  font-size: 20px;
+  animation: fadeInAnimation ease 10s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  right: 25%;
+}
+
+.chat:before{
+            position: absolute;
+            bottom: -10px;
+            right: -30px;
+            content:"";
+            border-top: 50px solid;
+            border-right: 20px solid transparent;
+            border-top: 20px solid green;
+            border-bottom: 20px solid transparent;
+     }
+ 
+
+  
+  @keyframes float {
+    0% {
+      transform: translatey(0px);
+    }
+    50% {
+      transform: translatey(-20px);
+    }
+    100% {
+      transform: translatey(0px);
+    }
+  }
+  
+  @keyframes float2 {
+    0% {
+      line-height: 30px;
+      transform: translatey(0px);
+    }
+    55% {
+      transform: translatey(-20px);
+    }
+    60% {
+      line-height: 10px;
+    }
+    100% {
+      line-height: 30px;
+      transform: translatey(0px);
+    }
+  }
+
+/* Styling navigation bar */
+.button1{
+  width: 60px;
+  height: 40px;
+}
+
+.dark_button{
+  position: fixed;
+  right: 20px;
+}
+
+/* for dark mode */
+.dark{
+  background-color: #222;
+  color: #e6e6e6;
+}
+
+.nav-bar {
+  background-color: #0095BE;
+  color: white;
+  font-family: 'Lato', sans-serif;
+  position: fixed;
+  top: 0;
+  align-items: center;
+  width: 100%;
+}
+
+.nav-bar a{
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: wavy;
+  font-size: 18px;
+}
+
+.nav-bar a:hover{
+  background-color: #FFD572;
+  color: #2B6BFF;
+}
+
+.nav-bar a.active{
+  background-color: #80F1C4;
+} 
+
+#dark_mode{
+  border-radius: 0.8vh;
+  color: black; 
+}
+
+
+section{
+  box-shadow: 0 0vh 0.2vh 0 #0095BE, 0 0.2vh 0.2vh 0 #0095BE;
+  height: 100%;
+}
+/* ----------------------------- Who am I section ----------------------------------- */
+.about-me{
+  height: 100vh;
+}
+
+.about-me-heading{
+  padding-top: 50px;
+  padding-left: 30px;
+  font-size: 40px;
+  color: #0095BE;
+  font-family: 'Raleway', sans-serif;
+}
+
+.auto-input{
+  padding: 5vh;
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  margin-left: 2vh;
+  line-height: 30px;
+}
+
+.my-pic{
+  float: right;
+  box-shadow: 20px 20px #0095be3e;
+  margin-right: 60px;
+}
+
+.about-me-box{
+  padding-left: 5vh;
+}
+
+.about-me-text{
+  margin-right: 5vh;
+  width: 120vh;
+}
+
+
+/* ------------------- What do I enjoy working on? --------------------- */
+.project-info{
+  height: 100vh;
+  background-color: #0095be3e;
+  padding-top: 50px;
+  display: flex; 
+  flex-direction: column;
+  column-gap: 50px;
+  
+}
+
+.projects-heading{
+  float: right;
+  padding-top: 50px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  font-size: 40px;
+  color: #0095BE;
+  font-family: 'Raleway', sans-serif;
+}
+
+.projects-text{
+  padding-left: 30px;
+  padding-top: 30px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+}
+
+
+/* ------------------- What do I enjoy working on? --------------------- */
+.project_container{
+  width: 100%;
+  margin: auto;
+  padding: 0 10px; 
+  padding-bottom: 20vh;
+}
+
+.project_container h2{
+  color: #0095BE;
+}
+
+.project_card{
+  display: inline-block;
+  font-family: 'Lato', sans-serif;
+}
+
+.project_icon{
+  float: left;
+  padding: 2vh;
+  margin: 5vh;
+  width: 35vh;
+  height: 35vh;
+  /* offset-x | offset-y | blur-radius | spread-radius | color */
+  box-shadow: 0 0.7vh 1vh 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project_icon:hover{
+  box-shadow: 0 0.7vh 1vh 0 #0095BE, 0 6px 20px 0 #0095BE;
+
+}
+
+.project_card .project_icon img{
+  width: 20vh;
+  height: 20vh;
+}
+
+#scheme1{
+  background-color: #dbf4e1;
+  color: white;
+}
+
+#scheme2{
+  background-color: #dbf4e1;
+  color: rgb(255, 255, 255);
+}
+
+#slider, #slider2, #slider3, #slider4, #slider5{
+  margin: 5vh;
+  padding: 2vh;
+  float: right;
+  align-items: center;
+  text-align: center;
+  width: 130vh;
+  height: 35vh;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  visibility: hidden;
+}
+
+
+
+
+/* Different styling for different elements */
+
+
+/* ------------------- How do I think about this world? --------------------- */
+.blog{
+  height: 120vh;
+}
+
+.blog-heading{
+  float: left;
+  padding-top: 50px;
+  padding-left: 30px;
+  font-size: 40px;
+  color: #0095BE;
+  font-family: 'Raleway', sans-serif;
+}
+
+.blog-text{
+  padding-left: 30px;
+  padding-top: 30px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+}
+
+
+/* ------------------- Where can you contact me? --------------------- */
+.contact{
+  height: 70vh;
+  background-color: #0095be3e;
+}
+
+.contact-heading{
+  float: right;
+  padding-top: 30px;
+  padding-right: 30px;
+  font-size: 40px;
+  color: #0095BE;
+  font-family: 'Raleway', sans-serif;
+}
+
+.contact-text{
+  padding-left: 30px;
+  padding-top: 30px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+}
+
+/* Form styling */
+form{
+  padding-top: 5vh;
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  font-weight: 1000;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  box-sizing: border-box;
+  width: 20;
+  height: fit-content;
+}
+
+ul{
+  list-style-type: none;
+  color: #0095BE;
+}
+
+li{
+  padding-bottom: 10px;
+  justify-items: center;
+  text-align: left;
+  justify-content: center;
+}
+
+textarea{
+  width: 400px;
+  height: 100px;
+  box-sizing: border-box;
+  border: 1.5px solid rgb(220, 177, 140);
+
+}
+
+input{
+  height: 30px;
+  border: 1.5px solid rgb(220, 177, 140);
+}
+
+label,input{
+  display: flex;
+}
+
+label{
+  margin-bottom: 5px;
+}
+
+.name_email{
+width: 400px;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+}
+
+input#subject{
+  width: 395px;
+}
+
+.send_button, button#welcome_submit{
+  background-color: #0095BE;
+  color: white;
+  box-shadow: 2px black;
+  padding-top: 15px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 15px;
+  border-radius: 20px;
+}
+
+button#welcome_submit{
+  background-color: rgb(203, 203, 203);
+  color: rgb(218, 32, 32);
+  box-shadow: 2px black;
+  padding-top: 1vh;
+  padding-left: 2vh;
+  padding-right: 2vh;
+  padding-bottom: 1vh;
+  border-radius: 1vh;
+}
+
+.send_button:hover{
+  background-color: rgb(220, 177, 140) ;
+  color:darkblue;
+  cursor: pointer;
+
+}
+
+/* For thoughts section */
+
+
+.blog-card{
+  width: 50vh;
+  height: 50vh;
+  display: flex;
+  flex-flow: column;
+  box-shadow: 0 20px 20px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+  background-image: url("https://res.cloudinary.com/mumtazf/image/upload/v1659818814/blogging.jpg");
+  background-size: cover;
+  text-align: center;
+  padding: 5vh;
+  margin: 5vh;
+  justify-content: center;
+  align-content: center;
+  left: 40%;
+}
+
+.blog_container{
+  width: 20vh;
+  height: 20vh;
+  margin: 3vh;
+  left: 50%;
+}
+
+.blog-card:hover{
+  box-shadow: 0 30px 40px 0 rgba(0, 149, 190, 0.5), 0 6px 20px 0 rgba(0, 149, 190, 0.5);
+
+}
+
+.blog_title{
+  color:white;
+  font-size: 5ch;
+
+}
+
+#blog_description, #poetry_description{
+  font-size: 20px;
+  color: white;
+  font-weight: 100;
+  display: none;
+}
+
+/* link style */
+
+a:hover{
+  background-color: rgb(0, 116, 116);
+  border-bottom: 1px solid;
+
+}
+
+.blog-showcase{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.main-blog{
+  display:grid;
+  grid-template-rows: 1fr 1fr;
+  
+}
+
+#warning{
+  background-color: rgba(14, 112, 14, 0.662);
+  color: white;
+  display:none;
+  position:sticky;
+  width: 100%;
+  font-size: auto;
+  top: 0;
+}
